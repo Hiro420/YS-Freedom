@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+  
+    <ItemGroup>
+    <PackageReference Include="PacketDotNet" Version="1.0.5" />
+    <PackageReference Include="SharpPcap" Version="5.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common.Generator\Common.Generator.csproj" />
+    <ProjectReference Include="..\Common\Common.csproj" />
+    <ProjectReference Include="..\Server\Server.csproj" />
+    <ProjectReference Include="..\Tool\YSGenerator\YSGenerator.csproj" />
+    <ProjectReference Include="..\Vendor\Amadeus.uHttp\Amadeus.uHttp.csproj" />
+  </ItemGroup>
+
+</Project>
